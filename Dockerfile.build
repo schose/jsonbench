@@ -1,0 +1,5 @@
+FROM golang:1.17.8
+
+
+RUN mkdir /build && cd /build && GOBIN=$PWD go get golang.org/x/benchmarks/...
+
